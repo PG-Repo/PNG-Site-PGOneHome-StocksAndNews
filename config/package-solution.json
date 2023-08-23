@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "PNG-Site-PGOneHome-StocksAndNews",
+    "id": "befed90d-97b7-4cc1-bb7b-f7d9de08c78c",
+    "version": "1.0.0.2",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/PNG-Site-PGOneHome-StocksAndNews.sppkg"
+  }
+}

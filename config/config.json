@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "pg-carousal-and-stock-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/pgCarousalAndStock/PgCarousalAndStockWebPart.js",
+          "manifest": "./src/webparts/pgCarousalAndStock/PgCarousalAndStockWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": {
+      "path": "node_modules/jquery/dist/jquery.min.js",
+      "globalName": "jQuery"
+    },
+    "marquee": {
+      "path": "src/webparts/pgCarousalAndStock/components/marquee.js",
+      "globalName": "jQuery"
+    }
+    
+    
+    
+  },
+  "localizedResources": {
+    "PgCarousalAndStockWebPartStrings": "lib/webparts/pgCarousalAndStock/loc/{locale}.js"
+  }
+}

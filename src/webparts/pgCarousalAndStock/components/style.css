@@ -1,0 +1,256 @@
+/* body.ms-font-m.mobile .CarousalStockContainerBG{
+  margin-top:40px;
+} */
+/* Canvas Zone */
+.CarousalStockContainerBG .ControlZone.ControlZone--emphasis {
+  /* margin-top: 14px;
+  margin-bottom: 14px; */
+  margin: 0px;
+  padding: 0px;
+}
+.CarousalStockContainerBG .CanvasZone.row{
+  padding: 0;
+}
+.CarousalStockContainerBG .CanvasSection.CanvasSection-col{
+padding: 0;
+}
+  .CanvasZone{
+    max-width:100%
+}
+
+/* Carousel css*/
+.ms-Grid.CarousalStockContainer.CarousalStockContainerBG{
+  /* background: #E5F2FE; */
+  background: #EFF6FC;
+  padding: 5px 8px;
+}
+/* .CarousalStockContainerBG{
+  background: #E5F2FE;
+} */
+.PGCarousalItem{
+     margin: 0px 10px; 
+   
+
+    border: 4px solid white;
+    
+  }
+.non-Pointer{
+  text-decoration: none;
+    cursor: default;
+}
+  .PGCarousalCaption {
+    background: rgba(20,20,20,.8);
+    color: #fff;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    font-size: 13px;
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 14px;
+    text-align: center;
+
+}
+
+  .react-multi-carousel-list .react-multiple-carousel__arrow{
+    border-radius: 3px;
+    background:rgba(17, 80, 159, .75);
+    min-height: 62px;
+    z-index: 2;
+    top: calc(20% + 1px);
+  }
+  .PGCarousalImg{
+    display: block;
+    height: 100%;
+    margin: auto;
+     width: 100%; 
+     max-height: 120px;
+  }
+  @media screen and (max-width: 640px){
+    .PGCarousalCaption{
+      font-size: 14px;
+      overflow: hidden;
+      width: auto;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    
+  }
+
+/* End Carousel css*/
+
+
+/* Stock Css */
+#stockContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  height: 100px;
+  margin-top: 2%;
+  text-decoration: none;
+  color: inherit;
+}
+
+#stockSymbolAndPrice {
+  font-size: 25px;
+  /* width: 80%; */
+  display: flex;
+  justify-content: center;
+  min-width: 105px;
+}
+
+#stockPrice {
+  font-weight: bold;
+  flex: 1;
+}
+
+#stockSymbol {
+  width: 60px;
+}
+
+#stockMovement {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 25px;
+  padding: 6px;
+}
+
+.positiveStock {
+  color:#007b2c; 
+  /* #00B967; */
+}
+
+.negativeStock {
+  color: #FE1A0E;
+}
+
+#stockTimestamp {
+  font-size: 14px;
+}
+
+/* your css rules for ipad */
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+  #stockSymbol {
+    width: 42px;
+}
+#stockPrice {
+  font-weight: 600;
+  flex: 1;
+}
+#stockContainer{
+  height: 150px;
+}
+}
+
+
+
+/* Making stock in two line */
+@media screen and (max-width: 736px) {
+  .stockContainerCol{
+    text-align: center;
+  }
+  #stockContainer {
+    display: inline-block;
+   height: auto;
+    margin-top: 3%;
+}
+#stockSymbolAndPrice{
+  
+  padding: 0px 10px;
+  display: inline;
+}
+#stockMovement{
+  width: auto;
+    display: inline-block;
+}
+  }
+  
+
+/* End Stock Css */
+
+  /* Breaking news  */
+  .breakingNews{
+    /* width: 120px; */
+    white-space: nowrap;
+    /* padding-right: 8px; */
+    margin-left: 16px;
+   
+}
+.breakingNewsCol{
+    display: inline-flex;
+    /* background-color: #012169; */
+padding: 9px 16px;
+/* color: yellow;  */
+margin: 12px 0px;
+font-size: 16px;
+margin-bottom: 0px;
+padding-top: 9px;
+padding-bottom: 8px;
+}
+#marqueeSpan{
+    width: 100%; margin-right: 8px;    margin-left: 8px;
+}
+.breakingNewsCol marquee{
+width: 100%;
+/* color: #FFFFFF ; */
+
+}
+/* .breakingNewsCol a{
+    
+     color: #FFFFFF ; 
+    } */
+    i.ms-Icon.ms-Icon--News.ms-u-hiddenXlUp{
+        padding-right: 8px;  
+    }
+.breakingNewsCol i{
+    color: yellow;
+    padding: 3px 10px;
+}
+.speedContoll{
+    cursor: pointer;
+}
+#speedSlider{
+    width: 90%;
+    padding: 0px;
+}
+.timeContlol select{
+        height: 28px;width: 85px;
+        border: 1px solid #c8c8c8;
+    color: #5d5858;
+}
+
+ /* @keyframes marquee {
+  0%   { transform: translate(0, 0); animation-timing-function: ease-in;}
+  100% { transform: translate(-100%, 0); animation-timing-function: ease-out;}
+}*/
+marquee a,.marquee a{ 
+  color: inherit;
+}
+#marqueeSpan{
+  white-space: nowrap;
+    overflow: hidden;
+}
+/* .marqueeDiv{
+  display: inline-block;
+  padding-left: 100%;
+  
+} */
+.marqueeDiv:hover{
+  animation-play-state: paused!important
+}
+marquee p,.marquee p{
+  margin: 0px;
+}
+
+      /* End Breaking news  */
